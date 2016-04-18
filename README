@@ -1,0 +1,15 @@
+编程开发
+开发参考http://www.live555.com/liveMedia/
+testProgs            #测试示例，各种功能演示示例
+proxyServer        #代理服务器示例，rtsp服务转发
+mediaServer       #流媒体服务器示例，发布rtsp流
+liveMedia            #类库
+====================================
+class RTSPServer
+rtspURLPrefix()   #如:rtsp://192.168.15.4/
+streamName()      #如:video/test.264
+lookupServerMediaSession()  #client 发送请求地址后，会调用此方法
+=================================
+note:
+不能动态创建代理转发的rtsp地址
+可以对本地的多媒体文件进行动态的创建rtsp地址
